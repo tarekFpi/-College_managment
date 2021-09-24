@@ -1,0 +1,555 @@
+
+*{padding: 0; margin: 0; }
+
+ 
+
+.head{
+	 background-color: LightCyan;
+	 width: 100%;
+	 height: 100px;
+     position: fixed; 
+	   top: 0;
+	  z-index: 15;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+}
+
+
+.head ul{
+	list-style-type: none;
+    top: 10px;
+   margin-left: 40px;
+   font-size: 20px;
+}
+
+
+
+
+.head ul li{
+	  float: left;
+	  margin-left: 40px;
+	  margin-top: 20px;
+	  border-radius: 5px;
+	 text-align: center;
+	 color: #000000;
+	 font-size: 18px;
+	 border: 1px solid Black;
+	 width: 200px;
+     height: 35px;
+     line-height: 35px;
+     position:relative;
+
+}
+
+.head ul li a{
+	 text-decoration:none;
+	 color: Black;
+	  display: block;
+}
+
+.head ul li a:hover {
+  background-color: #6A5ACD;
+  border-radius: 5px;
+display: block;
+}
+
+.head ul ul{
+	display: none;
+	font-size: 20px;
+}
+
+.head ul li:hover>ul{
+ box-sizing: border-box;
+	display: block; position: absolute;   
+	left: 0; 
+	margin:0; padding:0;
+    margin-top: 28px;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+   transition: all .1s ; 
+}
+
+.head ul li:hover>ul li{
+     margin-left:0; left: 0; 
+    margin-top: 4px;
+    background-color: white;
+    background: white;
+     font-size: 20px;
+}
+
+.head ul li ul li ul{
+	display: none;
+}
+
+.head ul li ul li:hover>ul{
+ box-sizing: border-box;
+ display: block;
+  position: absolute;    
+  border-bottom:1px solid white;
+  font-size: 18px;
+  margin-left: 200px;
+  top: 0;
+  margin-top: 0px;
+  width: 200px;
+  transition: all .1s ; 
+    
+}
+
+ 
+.maincont img{
+	 height: 700px;
+	 width: 100%;
+}
+
+
+ @keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+
+ 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left;  height: 650px; }
+
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite; 
+  
+}
+
+
+.studentlevel{
+	height: 200px;
+	width: 100%;
+	background-color: darkorchid;
+  align-items: center;
+  justify-content: center;
+  display:block;
+ }
+
+ .box{
+  position: relative;
+   margin-top: 10px;
+  background-color:#D8BFD8;
+  height:120px;
+  width:20%;
+  text-align: center;
+  float: left;
+  margin-left: 20px;
+ 
+}
+
+.box:hover{
+   background-color: #9400D3;
+   border:radius:8px;
+    transition-duration:1s;
+    box-shadow: 5px 8px 5px 7px violet;
+	background-image:linear-gradient(slateblue,	 violet);
+    border: 1px solid white;
+    display: block;
+  }
+
+.box .title_photo{
+  display: none;
+
+}
+
+
+.box:hover .title_photo{
+
+  display: block;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  overflow: hidden;  
+}
+
+
+ .box_student{
+  position: relative;
+ margin-top: 10px;
+  background-color:#D8BFD8;
+  height:120px;
+  width:20%;
+  text-align: center;
+  float: left;
+  margin-left: 20px;
+ align-items: center;
+}
+
+.box_student:hover{
+
+   background-color: #9400D3;
+   border:radius:8px;
+    transition-duration:1s;
+    box-shadow: 5px 8px 5px 7px violet;
+	background-image:linear-gradient(slateblue,	 violet);
+    border: 1px solid white;
+    display: block;
+  }
+
+
+
+.box_student .title_student{
+  display: none;
+}
+
+.box_student:hover .title_student{
+  display: block;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  color: DarkOrange;
+
+}
+
+
+ .box_admisson{
+  position: relative;
+ margin-top: 10px;
+  background-color:#D8BFD8;
+  height:120px;
+  width:20%;
+  text-align: center;
+ 
+  float: left;
+  margin-left: 20px;
+ align-items: center;
+}
+
+
+.box_admisson:hover{
+
+   background-color: #9400D3;
+   border:radius:8px;
+    transition-duration:1s;
+    box-shadow: 5px 8px 5px 7px violet;
+	background-image:linear-gradient(slateblue,	 violet);
+    border: 1px solid white;
+    display: block;
+  }
+
+.box_admisson .title_admisson{
+  display: none;
+}
+
+.box_admisson:hover .title_admisson{
+  display: block;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  color: OrangeRed;
+  overflow: hidden;
+  
+}
+
+
+.box_result{
+  position:relative;
+ margin-top: 10px;
+  background-color:#D8BFD8;
+  height:120px;
+ width:20%;
+  text-align: center;
+ 
+  float: left;
+  margin-left: 20px;
+ align-items: center;
+}
+
+.box_result:hover{
+
+   background-color: #9400D3;
+   border:radius:8px;
+    transition-duration:1s;
+    box-shadow: 5px 8px 5px 7px violet;
+	background-image:linear-gradient(slateblue,	 violet);
+    border: 1px solid white;
+    display: block;
+  }
+
+
+.box_result .title_result{
+  display: none;
+}
+
+
+.box_result:hover .title_result{
+  display: block;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  overflow: hidden;
+  
+}
+
+  .deatils{
+  float:left;
+  margin-top:0px;
+  	width: 100%;
+  	height: 900px;
+  	background-color: honeydew;
+	 
+  }
+  
+  .general_notices{
+   float:right;
+   height:100px;
+   width:30%;  
+ }
+ 
+  .deatils_image{
+  	  margin-top:0px; 
+  	border 2px solid black;	 
+  }
+
+  .button_style{
+  	margin-left: 10%;
+  	background-color: #0080ff;
+  	height: 40px; 
+  	width: 700px;
+  	margin-top: 40px;
+  	font-size: 22px;
+  }
+   
+  .button_style2{
+  	margin-left: 10%;
+  	background-color: #0080ff;
+  	height: 40px; 
+  	width: 700px;
+  	margin-top: 40px;
+  	margin-top: 10px;
+   font-size: 22px
+  }
+
+   .button_style:hover {
+   	color: white;
+ 
+   }
+
+   .button_style2:hover {
+   	color: white;
+   
+   }
+
+   .Principal_1{
+
+   	margin-left: 10%;
+   	height: 200px;
+   	width: 800px;
+   	background-color:white;
+    border-radius: 8px;
+    border: 1px solid #1a0000;
+    text-align: center;
+    font-size: 20px;
+    color: #1a0000;
+
+   }
+
+   .Principal_1:hover{
+      border:radius:8px;
+    transition-duration:1s;
+    box-shadow: 8px 8px 8px 8px #80ff00;
+	
+   }
+
+   .teacher_deteails{
+   	z-index: 1;
+   	height: 500px;
+   	width: 100%;
+   	background-color: #4d0000;
+   	margin-top: 50px;
+   	clip-path: polygon(0% 0, 46% 100%, 120% 1%);
+   }
+
+   .computer_teacher{
+    height: 150px;
+   	width: 150px;
+   	background-color: #0040ff;
+   	color: white;
+   margin: 0 auto;
+   float: left;
+   margin-left: 25%;
+  text-align: center;
+  position:relative;
+  margin-top: 30px;
+   }
+
+    .aidt_teacher{
+    height: 150px;
+   	width: 150px;
+   	background-color: #0040ff;
+   	color: white;
+   margin: 0 auto;
+   float: left;
+   margin-left: 20px;
+  text-align: center;
+  position:relative;
+  margin-top: 30px;
+   }
+
+   .electrical_teacher{
+   	height: 150px;
+   	width: 150px;
+   	background-color: #0040ff;
+   	color: white;
+   margin: 0 auto;
+   float: left;
+   margin-left:20px;
+  text-align: center;
+  position:relative;
+  margin-top: 30px;
+   }
+
+   .power_teacher{
+    height: 150px;
+   	width: 150px;
+   	background-color: #0040ff;
+   	color: white;
+   margin: 0 auto;
+   float: left;
+   margin-left:20px;
+  text-align: center;
+  position:relative;
+  margin-top: 30px;
+   }
+
+   .Civil_teacher{
+   height: 150px;
+   	width: 150px;
+   	background-color: #0040ff;
+   	color: white;
+   margin: 0 auto;
+   float: left;
+   margin-left:20px;
+  text-align: center;
+  position:relative;
+  margin-top: 30px;
+   }
+
+   .mechanical_teacher{
+    height: 150px;
+   	width: 150px;
+   	background-color: #0040ff;
+   	color: white;
+   margin: 0 auto;
+   float: left;
+   margin-left:20px;
+  text-align: center;
+  position:relative;
+  margin-top: 30px;
+   }
+
+  .student_count{
+   
+   padding: 20px;
+  	align-items: center;
+  	display: flex;
+  	text-align: center;
+  	height: 160px;
+  	width: 100%;
+  }
+
+  .student_part{
+	
+  margin-top:  30px;
+ margin-left: 30%;
+height: 80px;
+width: 80px;
+clip-path: circle(48.4% at 51% 51%);
+background-color: Ivory;
+  }
+
+  .technology_part{
+ 
+margin-left: 60px;
+ margin-top:  30px;
+height: 80px;
+width: 80px;
+clip-path: circle(48.4% at 51% 51%);
+background-color: Ivory;
+
+  }
+
+
+  .TEACHER_STAFFS{
+  	padding: 8px;
+	margin-left: 70px;
+  margin-top:  30px;
+height: 80px;
+width: 80px;
+clip-path: circle(48.4% at 51% 51%);
+background-color: Ivory;
+
+
+  }
+
+  .image_col{
+
+  	 margin-top: 60px;
+  	height: 350px;
+   width: 100%;
+   background-color: LightPink;
+  }
+
+  	
+
+
+   .image_aniation2 {
+
+         margin-right: 5%;
+     	  float: right;
+	     position: relative;
+  	      margin-top: 20px;
+         margin-left: 8%;
+  	  	height: 300px;
+        width: 800px;
+       background-color: black;
+       background-size: 100%  100%;
+       box-shadow: 1px 2px 10px 5px width;
+       background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0jtyKUFhgKMjISn6ipLAZBeS4QgMeAJl9A&usqp=CAU');
+       background-size: 100% 100%;
+      animation:slider 9s infinite linear;
+        
+  }
+
+  @keyframes slider{
+		0%{ background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0jtyKUFhgKMjISn6ipLAZBeS4QgMeAJl9A&usqp=CAU');}	
+
+		35%{background-image: url('https://polytechnicbd.com/wp-content/uploads/2020/01/f-prk.jpg');}
+
+		75%{background-image: url('https://polytechnicbarta.com/wp-content/uploads/2019/09/70317288_134143844563949_1595866223487221760_n.jpg');}
+		}
+
+   .Institute_informaton{
+    position: relative;
+   	width: 100%;
+   	height: 400px;
+  background: rgb(27, 26, 26);
+   }
+
+    h5:hover{
+ background-color: Aquamarine;
+    }
+
+  
